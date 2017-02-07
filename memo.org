@@ -1,0 +1,61 @@
+#+TITLE:     Deep Learning Practise Memo
+#+AUTHOR:    Baron Yong
+#+EMAIL:     baronysyong@gmail.com
+#+DESCRIPTION: deep learning practise memo
+#+LANGUAGE:  en
+#+OPTIONS: toc:t H:3 num:t \n:nil
+
+* Lesson 1: Image Recognition
+
+** Steps
+
+*** Get vgg16.py
+	- axel http://www.platform.ai/files/nbs/vgg16.zip
+
+*** Get utils
+	- axel http://www.platform.ai/files/nbs/utils.zip
+
+*** Get data
+	- axel http://www.platform.ai/data/dogcats.zip
+	- unzip -q dogscats.zip
+	- or get the data from https://www.kaggle.com/c/dogs-vs-cats
+
+* Miscellaneous
+
+** BPTT algorithm
+	- https://en.wikipedia.org/wiki/Backpropagation_through_time
+
+** ImageNet
+	- http://image-net.org/explore.php
+
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
+sudo ldconfig
+
+***~/.theanorc_************************************
+[global]
+floatX = float32
+device = gpu
+optimizer = fast_run
+
+[lib]
+cnmem = 0.8
+
+[nvcc]
+fastmath = True
+
+[blas]
+ldflags = -llapack -lblas
+*****************************************************
+***~/.keras/keras.json*******************************
+{
+    "image_dim_ordering": "tf", 
+    "epsilon": 1e-07, 
+    "floatx": "float32", 
+    "backend": "tensorflow"
+}
+### change "tf" to "th"
+### change "tensorflow" to "theano"
+### "tf" = tensorflow
+### "th" = theano
+*****************************************************
+
