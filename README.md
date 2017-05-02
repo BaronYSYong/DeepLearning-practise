@@ -1,5 +1,9 @@
 # Fast AI Tutorial
 
+## Reference
+* https://github.com/fastai/courses.git
+* http://course.fast.ai/
+
 ## Lesson 1: Image Recognition
 ### Get vgg16.py
 ```
