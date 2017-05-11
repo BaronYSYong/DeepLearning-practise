@@ -28,11 +28,7 @@ Or get the data from https://www.kaggle.com/c/dogs-vs-cats
     * http://image-net.org/explore.php
 
 ### Memo to train model by using GPU
-```
-$ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
-$ sudo ldconfig
-```
-modify ~/.theanorc
+* modify ~/.theanorc
 ```
 [global]
 floatX = float32
@@ -48,7 +44,7 @@ fastmath = True
 [blas]
 ldflags = -llapack -lblas
 ```
-modify ~/.keras/keras.json
+* modify ~/.keras/keras.json
 ```
 {
     "image_dim_ordering": "tf", 
