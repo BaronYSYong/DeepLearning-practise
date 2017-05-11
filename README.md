@@ -15,6 +15,7 @@ $ axel http://www.platform.ai/files/nbs/utils.zip
 ```
 
 ### Get data
+* https://www.kaggle.com/c/dogs-vs-cats/data
 * https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data
 
 ### Reference
