@@ -15,11 +15,7 @@ $ axel http://www.platform.ai/files/nbs/utils.zip
 ```
 
 ### Get data
-```
-$ axel http://www.platform.ai/data/dogcats.zip
-$ unzip -q dogscats.zip
-```
-Or get the data from https://www.kaggle.com/c/dogs-vs-cats
+* https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data
 
 ### Reference
 * BPTT algorithm
