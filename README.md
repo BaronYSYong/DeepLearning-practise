@@ -62,7 +62,7 @@ modify ~/.keras/keras.json
 * "tf" = tensorflow
 * "th" = theano
 ```
-$ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64"
+$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64
 $ export CUDA_HOME=/usr/local/cuda-8.0
-$ export PATH=”$PATH:/usr/local/cuda-8.0/bin”
+$ export PATH=$PATH:/usr/local/cuda-8.0/bin
 ```
