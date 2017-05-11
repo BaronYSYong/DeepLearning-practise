@@ -11,7 +11,7 @@ from utils import plots
 """Using Theano backend"""
 
 #%matplotlib inline
-path = "data/dogscats/"
+path = "data/dogsvscats-redux/"
 
 """
 As large as you can, but no larger than 64 is recommended. 
