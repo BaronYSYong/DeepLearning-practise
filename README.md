@@ -5,14 +5,6 @@
 * http://course.fast.ai/
 
 ## Lesson 1: Image Recognition
-### Get vgg16.py
-```
-$ axel http://www.platform.ai/files/nbs/vgg16.zip
-```
-### Get utils
-```
-$ axel http://www.platform.ai/files/nbs/utils.zip
-```
 
 ### Get data
 * https://www.kaggle.com/c/dogs-vs-cats/data
