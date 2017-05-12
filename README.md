@@ -7,7 +7,6 @@
 ## Lesson 1: Image Recognition
 
 ### Get data
-* https://www.kaggle.com/c/dogs-vs-cats/data
 * https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data
 
 #### Kaggle CLI
