@@ -10,32 +10,9 @@
 * https://www.kaggle.com/c/dogs-vs-cats/data
 * https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data
 
-### Process data
+### Arrange data
 ```
-$ mkdir -p data/dogsvscats-redux/
-$ mv test.zip data/dogsvscats-redux/
-$ mv train.zip data/dogsvscats-redux/
-$ cd data/dogsvscats-redux/
-$ unzip -q test.zip
-$ unzip -q train.zip
-$ cd train
-$ mkdir cats
-$ mkdir dogs
-$ mv cat.*.jpg cats
-$ mv dog.*.jpg dogs
-$ cd ..
-$ mkdir -p valid/dogs
-$ mkdir -p valid/cats
-$ mkdir -p sample/train/dogs
-$ mkdir -p sample/train/cats
-$ mkdir -p sample/valid/dogs
-$ mkdir -p sample/valid/cats
-$ shuf -n 1000 -e train/dogs/* | xargs -i mv {} valid/dogs/
-$ shuf -n 1000 -e train/cats/* | xargs -i mv {} valid/cats/
-$ shuf -n 4 -e valid/dogs/* | xargs -i cp {} sample/valid/dogs/
-$ shuf -n 4 -e valid/cats/* | xargs -i cp {} sample/valid/cats/
-$ shuf -n 8 -e valid/dogs/* | xargs -i cp {} sample/train/dogs/
-$ shuf -n 8 -e valid/cats/* | xargs -i cp {} sample/train/cats/
+$ sh arrange_data.sh
 ```
 
 ### Reference
