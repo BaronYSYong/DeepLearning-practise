@@ -10,6 +10,13 @@
 * https://www.kaggle.com/c/dogs-vs-cats/data
 * https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data
 
+#### Kaggle CLI
+* Create profile at https://www.kaggle.com/
+* On terminal: pip install kaggle-cli
+* kg config -g -u [username] -p [password] -c dogs-vs-cats-redux-kernels-edition
+* Go to https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition and accept competition requirements (by downloading the data)
+* On terminal: kg download
+
 ### Arrange data
 ```
 $ sh arrange_data.sh
